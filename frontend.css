@@ -58,3 +58,94 @@ header img {
     display: flex;
     justify-content: space-around;
 }
+
+footer {
+    background-color: #0065FC;
+    color: white;
+    width: 100%;
+    margin-top: 10%;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+}
+
+footer a:hover {
+    color: #ff79da;
+}
+
+section.aboutUs {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.aboutUsHeading {
+    margin-left: 27%;
+}
+
+div ul.list-group {
+    margin-top: 5%;
+}
+
+.categoriesCards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardContainer2 h3 {
+    padding-bottom: 2%;
+    margin-left: 7%;
+}
+
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 15px;
+    animation: fadein-bottom 2.5s ease-in-out both;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.card-container img {
+    width: 30%;
+}
+
+.product-1 {
+    margin-left: 2%;
+}
+
+.product-2 {
+    position: relative;
+    left: 34%;
+    margin-top: -52%;
+}
+
+.product-3 {
+    position: relative;
+    left: 67%;
+    margin-top: -51%;
+}
+
+.product-4 {
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.product-5 {
+    position: relative;
+    left: 34%;
+    margin-top: -52%;
+}
+
+.product-6 {
+    position: relative;
+    left: 67%;
+    margin-top: -52%;
+}
+
