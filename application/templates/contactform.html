@@ -1,0 +1,25 @@
+{% extends "contact.html" %}
+
+{% block content %}
+
+<h3> Send Us A Message</h3>
+<form action="" method="post">
+    <p>
+        {{form.firstname.label}} <br>
+        {{form.firstname(size=30)}}
+    </p>
+
+    <p>
+        {{form.lastname.label}} <br>
+        {{form.lastname(size=30)}}
+    </p>
+
+    <p>
+        {{form.message.label}} <br>
+        {{form.message.(size=100)}}
+    </p>
+
+    <p>
+        {{form.submit()}} <br>
+    </p>
+</form>

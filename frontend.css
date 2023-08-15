@@ -60,7 +60,7 @@ header img {
 }
 
 footer {
-    background-color: #0065FC;
+    background-color: gainsboro;
     color: white;
     width: 100%;
     margin-top: 10%;
@@ -69,7 +69,7 @@ footer {
 footer a {
     text-decoration: none;
     transition: color 0.3s;
-    color: white;
+    color: #0065FC;
 }
 
 footer a:hover {
@@ -149,3 +149,10 @@ div ul.list-group {
     margin-top: -52%;
 }
 
+.about-image img {
+    width: 100%;
+}
+
+.about-section {
+    margin-left: 30%;
+}
