@@ -1,4 +1,5 @@
 from application import db, app
+from application.models import Products
 
 with app.app_context():
     db.drop_all()
