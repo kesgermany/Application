@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
-
     <link href="/frontend.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0cac4ba7b.js" crossorigin="anonymous"></script>
     <style>
@@ -14,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <div class="loader"></div>
@@ -25,49 +24,33 @@
                 <li><a href="frontend.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="productlisting.html">Shop</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>      
+                <li><a href="contact.html">Contact Us</a></li>  
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
         </div>
     </header>
 
-    <section class="cardContainer2">
-        <h3>Popular Categories</h3>
-        <div class="categoriesCards">
-            <div class="card" style="width: 18rem;">
-                <img src="/Images/pexels-karolina-grabowska-6794581.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Diffusers and Scented Candles</h5>
-                <a href="#" class="btn btn-primary">Shop</a>
-                </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="/Images/pexels-brett-sayles-3773986.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Painting and Wall Art</h5>
-                <a href="#" class="btn btn-primary">Shop</a>
-                </div>
+    <div class="product">
+        <img src="/Images/pexels-la-miko-3754698.jpg" class="card-img-top" alt="Black and White Throw Pillow">
+        <div class="product-info">
+            <div class="card-description">
+            <h4>'Hug Me' Throw Pillow</h4>
+                <p>Single</p>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="/Images/pexels-ksenia-chernaya-3952029.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">House Plants</h5>
-                <a href="#" class="btn btn-primary">Shop</a>
-                </div>
+            <div class="price">
+                <h6>£45</h6>
             </div>
         </div>
-    </section>
+    </div>
 
-    <div>
-        <ul class="list-group">
-            <li class="list-group-item active" aria-current="true">Furnishings</li>
-            <li class="list-group-item">Painting and Wall Art</li>
-            <li class="list-group-item">House Plants</li>
-            <li class="list-group-item">Accessories</li>
-            <li class="list-group-item">Diffusers and Scented Candles</li>
-          </ul>
+
+    <div class="product-description">
+        <p> Introducing the 'Hug Me' Throw Pillow: Embrace comfort and charm with our irresistibly soft and heartwarming throw pillow.<br>
+            Designed to be more than just decor, this pillow beckons you with its cozy embrace, inviting you to unwind and feel instantly <br>
+            at ease. Its delightful message, "Hug Me," serves as a reminder of the warmth and comfort found within your own home. <br>
+            Whether nestled on your couch, bed, or favorite reading nook, the 'Hug Me' Throw Pillow adds a touch of whimsy and comfort <br>
+            to any space. Experience the joy of being enveloped in relaxation – this pillow is a soft hug waiting for you. </p>
     </div>
 
 
@@ -81,12 +64,11 @@
         </div>
     </footer>
 
+
     <!--LOADER SCRIPT-->
     <script>
         window.addEventListener("load", () => {
             document.querySelector(".loader").classList.add("loader--hidden");
         });
     </script>
-    
 </body>
-</html>

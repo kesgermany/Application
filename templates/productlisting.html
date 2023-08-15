@@ -14,6 +14,8 @@
 </head>
 <body>
 
+    <div class="loader"></div>
+
     <header>
         <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
         <div class="nav-links">
@@ -34,7 +36,7 @@
                 <div class="product-card">
                     <div class="card-description">
                     <h4>'Hug Me' Throw Pillow</h4>
-                        <p>Single</p>
+                    <a href="product1.html">View Product</a>
                     </div>
                     <div class="price">
                         <h6>£45</h6>
@@ -47,7 +49,7 @@
                 <div class="product-card">
                     <div class="card-description">
                     <h4>'A Little Cosy' Set</h4>
-                        <p>Blanket & Throw Pillow</p>
+                    <a href="product2.html">View Product</a>
                     </div>
                     <div class="price">
                         <h6>£99</h6>
@@ -60,7 +62,7 @@
                 <div class="product-card">
                     <div class="card-description">
                     <h4>Chocolate Crunch Candle</h4>
-                       <p>250g</p>
+                    <a href="product3.html">View Product</a>
                     </div>
                     <div class="price">
                         <h6>£25</h6>
@@ -73,7 +75,7 @@
                 <div class="product-card">
                     <div class="card-description">
                     <h4>Mama Africa Wall Art</h4>
-                        <p>30 x 60</p>
+                    <a href="product4.html">View Product</a>
                     </div>
                     <div class="price">
                         <h6>£250</h6>
@@ -86,7 +88,7 @@
                 <div class="product-card">
                     <div class="card-description">
                     <h4>'Let's Hang' Coat Hanger</h4>
-                        <p>10 hooks</p>
+                    <a href="product5.html">View Product</a>
                     </div>
                     <div class="price">
                         <h6>£49.99</h6>
@@ -99,7 +101,7 @@
                 <div class="product-card">
                     <div class="card-description">
                     <h4>World Atlas</h4>
-                        <p>Neutral</p>
+                    <a href="product6.html">View Product</a>
                     </div>
                     <div class="price">
                         <h6>£28</h6>
@@ -120,5 +122,12 @@
         </div>
     </footer>
     
+    <!--LOADER SCRIPT-->
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+        });
+    </script>
+
 </body>
 </html>

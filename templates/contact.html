@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="loader"></div>
+
     <section>
         <h2>Contact Us</h2>
         <div class="address">
@@ -17,5 +20,13 @@
         <p>020 1234 12345</p>
         </div>
     </section>
+
+    <!--LOADER SCRIPT-->
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+        });
+    </script>
+    
 </body>
 </html>

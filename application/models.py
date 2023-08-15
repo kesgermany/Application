@@ -7,7 +7,34 @@ from wtforms.validators import ValidationError, DataRequired, Length
 
 class Products(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(30))
+    title = db.Column(db.String(100), nullable=False)
+    img_url = db.Column(db.String, nullable=False)
+    caption = db.Column(db.String(100))
+    price = db.Column(db.Float, nullable=False)
+    quantity = db.Column(db.Integer, nullable=False)
+
+    def __init__(self, title, img_url, caption, price, quantity):
+        self.title = title
+        self.img_url = img_url
+        self.caption = caption
+        self.price = price
+        self.quantity = quantity
+
+    def saveToDB(self):
+        db.session.add(self)
+        db.session.commit()
+        
+    def deleteFromDB(self):
+        db.session.delete(self)
+        db.session.commit()
+        
+    def to_dict(self):
+        return {"id": self.id, 
+                "title": self.title, 
+                "img_url": self.img_url, 
+                "caption": self.caption, 
+                "price": self.price, 
+                "quantity": self.quantity}
 
 # Customer Table
 
@@ -37,3 +64,26 @@ class BasicForm(FlaskForm):
 
     submit = SubmitField('Add Name')
 
+
+# Cart 
+
+class Cart(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    item_id = db.Column(db.Integer, db.ForeignKey('item.id'), nullable=False)
+    quantity = db.Column(db.Integer, default=1)
+
+    def __init__(self, item_id, quantity=1):
+        self.item_id = item_id
+        self.quantity = quantity
+
+    def update_quantity(self, quantity):
+        self.quantity += quantity
+        db.session.commit()
+
+    def saveToDB(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def deleteFromDB(self):
+        db.session.delete(self)
+        db.session.commit()

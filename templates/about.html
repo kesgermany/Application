@@ -15,6 +15,8 @@
 </head>
 <body>
 
+    <div class="loader"></div>
+
     <header>
         <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
         <div class="nav-links">
@@ -96,5 +98,12 @@
                 <a href="contact.html" class="footer-link">Contact Us</a>
             </div>
         </footer>
+
+        <!--LOADER SCRIPT-->
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+        });
+    </script>
 </body>
 </html>

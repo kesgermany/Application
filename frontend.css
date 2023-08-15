@@ -123,30 +123,44 @@ div ul.list-group {
 .product-2 {
     position: relative;
     left: 34%;
-    margin-top: -52%;
+    margin-top: -50%;
 }
 
 .product-3 {
     position: relative;
     left: 67%;
-    margin-top: -51%;
+    margin-top: -50%;
 }
 
 .product-4 {
     margin-left: 2%;
-    margin-top: 5%;
+    margin-top: 9%;
 }
 
 .product-5 {
     position: relative;
     left: 34%;
-    margin-top: -52%;
+    margin-top: -50%;
 }
 
 .product-6 {
     position: relative;
     left: 67%;
-    margin-top: -52%;
+    margin-top: -50%;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-description {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.product-info {
+    margin-left: 10%;
+    margin-top: 3%;
 }
 
 .about-image img {
@@ -156,3 +170,32 @@ div ul.list-group {
 .about-section {
     margin-left: 30%;
 }
+
+ .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 100;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #0065FC;
+    border-radius: 50%;
+    animation: spin 0.75s ease infinite;
+  }

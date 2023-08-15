@@ -14,6 +14,8 @@
 </head>
 <body>
 
+  <div class="loader"></div>
+
     <!--HEADER & NAVIGATION BAR-->
 
     <header>
@@ -119,6 +121,14 @@
             <a href="contact.html" class="footer-link">Contact Us</a>
         </div>
     </footer>
+
+
+    <!--LOADER SCRIPT-->
+    <script>
+      window.addEventListener("load", () => {
+          document.querySelector(".loader").classList.add("loader--hidden");
+      });
+  </script>
     
 </body>
 </html>
