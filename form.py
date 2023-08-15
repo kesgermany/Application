@@ -5,13 +5,7 @@ from wtforms import StringField, SubmitField, DateField, IntegerField, SelectFie
 from wtforms.validators import ValidationError, DataRequired, Length
 
 class ContactForm(FlaskForm):
-    first_name = StringField('First Name', validators=[
-        DataRequired(),
-        Length(min=2, max=30)
-    ])
+    first_name = StringField('First Name')
     last_name = StringField('Last Name')
-    message = StringField('Type your message', validators=[
-        DataRequired(),
-        Length(min=10, max=100)
-    ])
+    message = StringField('Type your message')
     submit = SubmitField('Send')
