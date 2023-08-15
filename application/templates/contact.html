@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Contact Us</h2>
+        <div class="address">
+            <h5>Address</h5>
+            <p>5 Project 1<br> London <br> SE1 5AU</p>
+        </div>
+        <div class="Phone">
+        <h5>Phone Number</h5>
+        <p>020 1234 12345</p>
+        </div>
+    </section>
+
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.first_name.label }} {{ form.first_name }}
+                <br>
+                {{ form.last_name.label }} {{ form.last_name }}
+                <br>
+                {{ form.submit }}
+                <br>
+            {{ message }}
+            </form>
+        </div>
+</body>
+</html>
