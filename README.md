@@ -19,16 +19,11 @@ CSS
 SQL
 PYTHON
 
-Application loaded on Jenkins
+Application uploaded to Jenkins
 
 
-Challenges
 
-Time Constraints: This was a major challenge as I am beginner programmer. This meant that I needed to research and learn more during the process. As a result, some pages are outstanding and will be included in future updates.
 
-Technical Challenges: There were some technical issues with my computer causing a significant delay in the development process.
-
-Database Connection Issues: Most likely due to the above point, there were issues with connecting to my database and database disconnections.
 				
 				
 
