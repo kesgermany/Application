@@ -199,3 +199,15 @@ div ul.list-group {
     border-radius: 50%;
     animation: spin 0.75s ease infinite;
   }
+
+  .contact-section img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+  }
+
+  .contact-section div, .contact-section h2, .contact-section a {
+    margin-left: 5%;
+  } 
+
+
