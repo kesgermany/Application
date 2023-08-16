@@ -19,12 +19,12 @@
     <!--HEADER & NAVIGATION BAR-->
 
     <header>
-        <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
+        <img src="{{ url_for('static', filename='Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG') }}" alt="QA logo" title="logo">
         <div class="nav-links">
             <ul>
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About Us</a></li>
-                <li><a href="{{ url_for('productlisting') }}">Shop</a></li>
+                <li><a href="{{ url_for('product_listing') }}">Shop</a></li>
                 <li><a href="{{ url_for('contact') }}">Contact Us</a></li>  
                 <li><a href="{{ url_for('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
@@ -36,7 +36,7 @@
         <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active c-item">
-                <img src="/Images/pexels-pixabay-271816.jpg" class="d-block w-100 c-img" alt="Home Decor">
+                <img src="{{ url_for('static', filename='Images/pexels-pixabay-271816.jpg')}}" class="d-block w-100 c-img" alt="Home Decor">
                 <div class="carousel-caption">
                     <h1 class="slideHeading">Love Your Home</h1>
                     <p class="slideParagraph">Shop Our Summer Collection</p>
@@ -44,10 +44,10 @@
                 </div>
               </div>
               <div class="carousel-item c-item">
-                <img src="/Images/pexels-spencer-selover-706144.jpg" class="d-block w-100 c-img" alt="Sound System">
+                <img src="{{ url_for('static', filename='Images/pexels-spencer-selover-706144.jpg') }}" class="d-block w-100 c-img" alt="Sound System">
               </div>
               <div class="carousel-item c-item">
-                <img src="/Images/pexels-designecologist-1005058.jpg" class="d-block w-100 c-img" alt="House Plant">
+                <img src="{{ url_for('static', filename='Images/pexels-designecologist-1005058.jpg') }}" class="d-block w-100 c-img" alt="House Plant">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
@@ -73,38 +73,38 @@
 
     <section class="cardContainer">
         <div class="card" style="width: 18rem;">
-            <img src="/Images/pexels-sammsara-luxury-modern-home-1099816.jpg" class="card-img-top" alt="...">
+            <img src="{{ url_for('static', filename='Images/pexels-sammsara-luxury-modern-home-1099816.jpg')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Product Listing</h5>
               <p class="card-text">Shop our latest products.</p>
-              <a href="productlisting.html" class="btn btn-primary">Shop</a>
+              <a href="{{ url_for('product_listing') }}" class="btn btn-primary">Shop</a>
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/Images/pexels-max-rahubovskiy-6434625.jpg" class="card-img-top" alt="...">
+            <img src="{{ url_for('static', filename='Images/pexels-max-rahubovskiy-6434625.jpg')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Product Categories</h5>
               <p class="card-text">Shop products by category.</p>
-              <a href="categories.html" class="btn btn-primary">Shop</a>
+              <a href="{{ url_for('categories') }}" class="btn btn-primary">Shop</a>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
-            <img src="/Images/pexels-elina-sazonova-1838550.jpg" class="card-img-top" alt="...">
+            <img src="{{ url_for('static', filename='Images/pexels-elina-sazonova-1838550.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Luxury</h5>
               <p class="card-text">Shop our luxury collection.</p>
-              <a href="productlisting.html" class="btn btn-primary">Shop</a>
+              <a href="{{ url_for('product_listing') }}" class="btn btn-primary">Shop</a>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
-            <img src="/Images/pexels-karolina-grabowska-5632346.jpg" class="card-img-top" alt="...">
+            <img src="{{ url_for('static', filename='Images/pexels-karolina-grabowska-5632346.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Latest Offers</h5>
               <p class="card-text">Shop items on sale.</p>
-              <a href="#" class="btn btn-primary">Shop</a>
+              <a href="{{ url_for('product_listing') }}" class="btn btn-primary">Shop</a>
             </div>
           </div>
         
@@ -115,10 +115,10 @@
     <footer>
         <div class="footer-main">
             <div class="footer-row">
-                <a href="frontend.html" class="footer-link">Back to Home Page</a>
+              <a href="{{ url_for('home') }}">Home</a>
             </div>
-            <a href="about.html" class="footer-link">About Us</a><br><br>
-            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="{{ url_for('about') }}">About Us</a><br><br>
+            <a href="{{ url_for('contact') }}">Contact Us</a>  
         </div>
     </footer>
 

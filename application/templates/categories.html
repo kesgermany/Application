@@ -19,12 +19,12 @@
     <div class="loader"></div>
 
     <header>
-        <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
+        <img src="{{ url_for('static', filename='Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG') }}" alt="QA logo" title="logo">
         <div class="nav-links">
             <ul>
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About Us</a></li>
-                <li><a href="{{ url_for('productlisting') }}">Shop</a></li>
+                <li><a href="{{ url_for('product_listing') }}">Shop</a></li>
                 <li><a href="{{ url_for('contact') }}">Contact Us</a></li>  
                 <li><a href="{{ url_for('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
@@ -35,7 +35,7 @@
         <h3>Popular Categories</h3>
         <div class="categoriesCards">
             <div class="card" style="width: 18rem;">
-                <img src="/Images/pexels-karolina-grabowska-6794581.jpg" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='Images/pexels-karolina-grabowska-6794581.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Diffusers and Scented Candles</h5>
                 <a href="#" class="btn btn-primary">Shop</a>
@@ -43,7 +43,7 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="/Images/pexels-brett-sayles-3773986.jpg" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='Images/pexels-brett-sayles-3773986.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Painting and Wall Art</h5>
                 <a href="#" class="btn btn-primary">Shop</a>
@@ -51,7 +51,7 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="/Images/pexels-ksenia-chernaya-3952029.jpg" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='Images/pexels-ksenia-chernaya-3952029.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">House Plants</h5>
                 <a href="#" class="btn btn-primary">Shop</a>
@@ -74,10 +74,10 @@
     <footer>
         <div class="footer-main">
             <div class="footer-row">
-                <a href="frontend.html" class="footer-link">Back to Home Page</a>
+                <a href="{{ url_for('home') }}">Home</a>
             </div>
-            <a href="about.html" class="footer-link">About Us</a><br><br>
-            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="{{ url_for('about') }}">About Us</a><br><br>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
         </div>
     </footer>
 

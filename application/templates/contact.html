@@ -19,12 +19,12 @@
 
 
     <header>
-        <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
+        <img src="{{ url_for('static', filename='Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG') }}" alt="QA logo" title="logo">
         <div class="nav-links">
             <ul>
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About Us</a></li>
-                <li><a href="{{ url_for('productlisting') }}">Shop</a></li>
+                <li><a href="{{ url_for('product_listing') }}">Shop</a></li>
                 <li><a href="{{ url_for('contact') }}">Contact Us</a></li>  
                 <li><a href="{{ url_for('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
@@ -32,7 +32,7 @@
     </header>
 
     <section class="contact-section">
-        <img src="/Images/pexels-tim-mossholder-942317.jpg" alt="Quote" title="image">
+        <img src="{{ url_for('static', filename='Images/pexels-tim-mossholder-942317.jpg') }}" alt="Quote" title="image">
         <h2>Contact Us</h2>
         <div class="address">
             <h5>Address</h5>
@@ -41,7 +41,7 @@
         <div class="Phone">
         <h5>Phone Number</h5>
         <p>020 1234 12345</p>
-        <a href="contactform.html" class="footer-link">Click to Send Us a Message</a>
+        <a href="{{ url_for('contact') }}" class="footer-link">Click to Send Us a Message</a>
         </div>
     </section>
 
@@ -49,10 +49,10 @@
     <footer>
         <div class="footer-main">
             <div class="footer-row">
-                <a href="frontend.html" class="footer-link">Back to Home Page</a>
+                <a href="{{ url_for('home') }}">Home</a>
             </div>
-            <a href="about.html" class="footer-link">About Us</a><br><br>
-            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="{{ url_for('about') }}">About Us</a><br><br>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
         </div>
     </footer>
 
