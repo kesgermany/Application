@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Listing</title>
-    <link href="/frontend.css" type="text/css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='frontend.css') }}" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0cac4ba7b.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
@@ -17,14 +17,14 @@
     <div class="loader"></div>
 
     <header>
-        <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
+        <img src="/application/static/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
         <div class="nav-links">
             <ul>
-                <li><a href="frontend.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="productlisting.html">Shop</a></li>
-                <li><a href="contact.html">Contact Us</a></li> 
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>     
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('productlisting') }}">Shop</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>  
+                <li><a href="{{ url_for('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
         </div>
     </header>
@@ -32,7 +32,7 @@
     <section>
         <div class="card-container">
             <div class="product-1">
-                <img src="/Images/pexels-la-miko-3754698.jpg" class="card-img-top" alt="Black and White Throw Pillow">
+                <img src="/application/static/Images/pexels-la-miko-3754698.jpg" class="card-img-top" alt="Black and White Throw Pillow">
                 <div class="product-card">
                     <div class="card-description">
                     <h4>'Hug Me' Throw Pillow</h4>
@@ -45,7 +45,7 @@
             </div>
             
             <div class="product-2">
-                <img src="/Images/pexels-mikhail-nilov-6957903.jpg" class="card-img-top" alt="Blanket and Throw Pillow">
+                <img src="/application/static/Images/pexels-mikhail-nilov-6957903.jpg" class="card-img-top" alt="Blanket and Throw Pillow">
                 <div class="product-card">
                     <div class="card-description">
                     <h4>'A Little Cosy' Set</h4>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="product-3">
-                <img src="/Images/pexels-karolina-grabowska-6794581.jpg" class="card-img-top" alt="Scented Candle">
+                <img src="application/static/Images/pexels-karolina-grabowska-6794581.jpg" class="card-img-top" alt="Scented Candle">
                 <div class="product-card">
                     <div class="card-description">
                     <h4>Chocolate Crunch Candle</h4>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="product-4">
-                <img src="/Images/pexels-max-rahubovskiy-6434608.jpg" class="card-img-top" alt="Wall Art">
+                <img src="application/static/Images/pexels-max-rahubovskiy-6434608.jpg" class="card-img-top" alt="Wall Art">
                 <div class="product-card">
                     <div class="card-description">
                     <h4>Mama Africa Wall Art</h4>
@@ -84,7 +84,7 @@
             </div> 
             
             <div class="product-5">
-                <img src="/Images/pexels-rachel-claire-6123224.jpg" class="card-img-top" alt="Coat Hanger">
+                <img src="application/static/Images/pexels-rachel-claire-6123224.jpg" class="card-img-top" alt="Coat Hanger">
                 <div class="product-card">
                     <div class="card-description">
                     <h4>'Let's Hang' Coat Hanger</h4>
@@ -97,7 +97,7 @@
             </div>  
 
             <div class="product-6">
-                <img src="/Images/pexels-tatiana-syrikova-3932929.jpg" class="card-img-top" alt="Atlas">
+                <img src="application/static/Images/pexels-tatiana-syrikova-3932929.jpg" class="card-img-top" alt="Atlas">
                 <div class="product-card">
                     <div class="card-description">
                     <h4>World Atlas</h4>

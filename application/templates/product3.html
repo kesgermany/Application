@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/frontend.css" type="text/css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='frontend.css') }}" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0cac4ba7b.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
@@ -21,36 +21,37 @@
         <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
         <div class="nav-links">
             <ul>
-                <li><a href="frontend.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="productlisting.html">Shop</a></li>
-                <li><a href="contact.html">Contact Us</a></li>  
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>    
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('productlisting') }}">Shop</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>  
+                <li><a href="{{ url_for('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
         </div>
     </header>
 
 
     <div class="product">
-        <img src="/Images/pexels-max-rahubovskiy-6434608.jpg" class="card-img-top" alt="Wall Art">
+        <img src="/Images/pexels-karolina-grabowska-6794581.jpg" class="card-img-top" alt="Scented Candle">
         <div class="product-info">
             <div class="card-description">
-            <h4>Mama Africa Wall Art</h4>
-                <p>30 x 60</p>
+            <h4>Chocolate Crunch Candle</h4>
+               <p>250g</p>
             </div>
             <div class="price">
-                <h6>£250</h6>
+                <h6>£25</h6>
             </div>
         </div>
     </div>
 
-    
     <div class="product-description">
-        <p> Immerse your space in the grace and strength of our Mama Africa Wall Art. Celebrating the beauty and <br>
-            resilience of African heritage, this captivating piece captures the essence of cultural richness and empowerment. <br>
-            With bold, vibrant colors and intricate details, the artwork pays homage to the strength, wisdom, and elegance of African women. <br>
-            Whether you're looking to infuse your home with cultural significance or simply seeking a stunning focal point, this Wall Art is a <br>
-            tribute to diversity and a symbol of empowerment. Elevate your decor with a touch of heritage and artistry that resonates beyond borders. </p>
+        <p> Introducing our Elegance in Form Scented Candle - a sensory delight that combines artistry and aroma in one exquisite package. <br>
+            This body-shaped candle is not just a decor piece; it's a masterpiece that adds a touch of sophistication to any space.<br>
+            Crafted with meticulous attention to detail, the candle's elegant contours evoke the beauty of the human form, while its <br>
+            subtle fragrance fills the air with an enchanting scent, creating an ambiance of serenity and indulgence. <br>
+            Perfect as a unique gift or a statement piece for your own space, our Elegance in Form Scented Candle is a celebration of <br>
+            aesthetics and olfactory pleasure. Illuminate your surroundings and elevate your senses with this remarkable fusion of art <br> 
+            and fragrance. </p>
     </div>
 
     <footer>
@@ -64,10 +65,10 @@
     </footer>
 
     <!--LOADER SCRIPT-->
-
     <script>
         window.addEventListener("load", () => {
             document.querySelector(".loader").classList.add("loader--hidden");
         });
     </script>
+
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/frontend.css" type="text/css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='frontend.css') }}" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f0cac4ba7b.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
@@ -15,43 +15,42 @@
 
 <body>
 
-    <div class="loader"></div> 
+    <div class="loader"></div>
 
     <header>
         <img src="/Images/FDF9C8FA-4F97-4851-BE83-DD8A3A0A629E 2.PNG" alt="QA logo" title="logo">
         <div class="nav-links">
             <ul>
-                <li><a href="frontend.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="productlisting.html">Shop</a></li>
-                <li><a href="contact.html">Contact Us</a></li>  
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>    
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('productlisting') }}">Shop</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>  
+                <li><a href="{{ url_for('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a></li>    
             </ul>
         </div>
     </header>
 
 
     <div class="product">
-        <img src="/Images/pexels-tatiana-syrikova-3932929.jpg" class="card-img-top" alt="Atlas">
+        <img src="/Images/pexels-la-miko-3754698.jpg" class="card-img-top" alt="Black and White Throw Pillow">
         <div class="product-info">
             <div class="card-description">
-            <h4>World Atlas</h4>
-                <p>Neutral Colour</p>
+            <h4>'Hug Me' Throw Pillow</h4>
+                <p>Single</p>
             </div>
             <div class="price">
-                <h6>£28</h6>
+                <h6>£45</h6>
             </div>
         </div>
-    </div>  
+    </div>
+
 
     <div class="product-description">
-        <p> Explore our planet like never before with our meticulously crafted world atlas. Embark on a captivating journey through continents,<br> 
-            countries, and cultures, all within the pages of this comprehensive guide. <br> 
-            Immerse yourself in vivid maps that vividly portray the diverse landscapes and rich histories of our world. From bustling metropolises <br> 
-            to remote wilderness, this World Atlas is your passport to understanding the intricacies and wonders of our global home. <br> 
-            Whether you're an avid traveler, a curious student, or an armchair adventurer, let the pages <br> 
-            of this atlas transport you to far-flung corners and hidden gems, all while deepening your <br> 
-            appreciation for the beauty and complexity of Earth. </p>
+        <p> Introducing the 'Hug Me' Throw Pillow: Embrace comfort and charm with our irresistibly soft and heartwarming throw pillow.<br>
+            Designed to be more than just decor, this pillow beckons you with its cozy embrace, inviting you to unwind and feel instantly <br>
+            at ease. Its delightful message, "Hug Me," serves as a reminder of the warmth and comfort found within your own home. <br>
+            Whether nestled on your couch, bed, or favorite reading nook, the 'Hug Me' Throw Pillow adds a touch of whimsy and comfort <br>
+            to any space. Experience the joy of being enveloped in relaxation – this pillow is a soft hug waiting for you. </p>
     </div>
 
 
@@ -65,8 +64,8 @@
         </div>
     </footer>
 
-    <!--LOADER SCRIPT-->
 
+    <!--LOADER SCRIPT-->
     <script>
         window.addEventListener("load", () => {
             document.querySelector(".loader").classList.add("loader--hidden");
